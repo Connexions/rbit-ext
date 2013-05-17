@@ -18,7 +18,11 @@ import shutil
 import jsonpickle
 import requests
 
-import rbit
+try:
+    import rbit
+except ImportError:
+    import coyote as rbit
+
 from .utils import logger, get_completezip, unpack_zip
 
 __all__ = (

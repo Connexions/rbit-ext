@@ -81,7 +81,7 @@ def make_epub(message, set_status, settings={}):
         set_status('Failed', stderr)
         return
     else:
-        msg = "PDF created, moving contents to final destination..."
+        msg = "EPUB created, moving contents to final destination..."
         set_status('Building', msg)
 
     # Move the file to it's final destination.
